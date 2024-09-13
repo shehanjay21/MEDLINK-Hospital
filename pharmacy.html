@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Page</title>
+    <link rel="stylesheet" href="./CSS pages/pharmacy.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">MEDLINK</div>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about us.html">About</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./doctors.html">Doctors</a></li>
+                <li><a href="./consulting.html">Consulting Reservation</a></li>
+                <li><a href="./pharmacy.html">Pharmacy</a></li>
+                <li><a href="./visitor info.html">Visitor Information</a></li>
+            </ul>
+        </nav>
+        
+        </div>
+        <div class="contact-button">
+            <a href="./contact us.html">Contact Us</a>
+        </div>
+        <!-- Hamburger icon -->
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Pharmacy Section -->
+    <section class="pharmacy-intro">
+        <div class="intro-header">
+            <h1>Pharmacy Services</h1><br>
+            <p>We provide various medical supplies and prescription refills. Select your category or search directly.</p>
+        </div>
+        <div class="category-search">
+            <div class="category-filter">
+                <label for="categories">Categories</label><br>
+                <select id="categories">
+                    <option value="medications">Medications</option>
+                    <option value="supplements">Supplements</option>
+                    <option value="equipment">Medical Equipment</option>
+                </select>
+            </div>
+            <div class="search-bar">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prescription Order Form -->
+    <section class="prescription-order">
+        <h2>Place an Order</h2>
+        <form action="#" method="post">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone No." required>
+
+            <label for="prescription">Prescription No.</label>
+            <input type="text" id="prescription" name="prescription" placeholder="Prescription No." required>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Any additional notes..."></textarea>
+
+            <button type="submit" class="submit-button">Place Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>&copy; 2024 MED LINK. All Rights Reserved.</p>
+            </div>
+            <div class="footer-column">
+                <ul class="footer-links">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./contact us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Phone: (123) 456-7890</p>
+                <a href="mailto:info@medlink.com">Email: info@medlink.com</a>
+            </div>
+        </div>
+        <script src="./Scripts/nav.js"></script>
+    </footer>
+</body>
+</html>
